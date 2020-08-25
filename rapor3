@@ -1,0 +1,33 @@
+
+2.2	  2. Hafta
+
+	Stajın 2. Haftasında asıl görev yerim olan Aselsan Gölbaşı Tesisinde staj yapmaya başladım. Görev yerim olan Uygulama Yazılımları Geliştirme Müdürlüğü’nde çalışmalarıma başladım. Birimimizde Radar, Elektronik Harp, Muhabere Elektronik Harp ve Kendini Koruma sistem projeleri yapılmaktadır. Staj yaptığım bölümün kullandığı yazılım altyapısı tanıtıldı. Bu haftadan itibaren araştırma görevim verildi ve ilerleyiş süreci içerisinde daha sonraki haftalarda da proje yazılım görevi verildi.
+
+	İlk araştırma konusu, olarak yazılımların yüklenebilen ve taşınabilen bir paket haline gelmesini sağlayan, farklı platformlara aktarabilmemizi sağlayan ve paketlenen yazılımın tekrar yüklenebilmesini sağlayan “installer builder” toolları araştırılması istendi. Araştırma sonucu güncel olan ve istenen şartlara uygun kullanılabilir installer tool’u tavsiyesi istendi.
+
+
+2.2.1	Installer and Builder 
+
+     Bazı bilgisayar programları, bilgisayarda depolanan bir klasöre kopyalanıp tılayarak çalıştırılabilir. Bazı  programlar ise hemen tıklanıp çalıştırılabilir formda değildir  ve bu nedenle bir kurulum prosedürüne ihtiyaç duyar. Program yüklendikten sonra, her çalıştırmadan önce yeniden yüklemeye gerek kalmadan tekrar tekrar çalıştırılabilir.
+
+	Installation program veya “Installer” sürücüler, uygulamalar veya diğer yazılımlar gibi dosyaları yükleyen bir bilgisayar programıdır. Bazı installer’lar, içerdikleri dosyaları yüklemek için özel olarak yapılmıştır; diğer yükleyiciler genel amaçlıdır ve kurulacak yazılım paketinin içeriğini okuyarak çalışır.
+
+	Installer Builder ise Windows, macOS veya Linux işletim sistemleri üzerinde çalışan installer üretir. Genellikle amaç, cross-platform desteği sağlayarak installer üretmektir.
+ 
+
+(şekil 2.4)
+
+
+2.2.2	Piyasadaki Installer-Builderların Araştırılması
+	
+	Benden araştırılması istenen tool, cross-platform desteğine sahip olması gerekiyordu. Buna göre araştırma yaptığımda  piyasada yaygın 3 tane yazılımın ismi öne çıkmakta:
+•	InstallJammer
+•	InstallAnywhere
+•	InstalBuilder
+
+2.2.2.1	  InstallJammer
+
+	InstallerJammer Tcl dilinde yazılmış, yükleme sihirbazı görüntüleyebilen self-extracting dosyalarını oluşturan Windows tarzı installer oluşturucudur. Windows, FreeBSD, Linux (x86 and x64), Solaris, HP-UX and AIX sistemlerine intaller oluşturma yeteneğine sahiptir.[2]
+
+	InstallerJammer, 16 Ağustos 2020 tarihinde geliştirmeye durduruldu ve güncellenmemektedir. Bundan dolayı işletim sistemlerinin güncel sürümleriyle uyumluluk sorunu yaşanmaktadır ve günümüz gereksinimlerini artık tam karşılayamamaktadır.
+
